@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.driver.Create_profile_driver">
+
+
+    <ImageView
+        android:id="@+id/backgroundRectangle"
+        android:layout_width="360dp"
+        android:layout_height="301dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="368dp"
+        android:src="@drawable/rounded_background_login"
+        app:layout_constraintBottom_toTopOf="@+id/button_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fio_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="92dp"
+        android:hint="Фио"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toTopOf="@+id/backgroundRectangle"/>
+
+    <EditText
+        android:id="@+id/number_phone_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Номер телефона +7..."
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/fio_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/about_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="О себе"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/number_phone_text"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_margin="16dp"
+        android:text="Создать профиль"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundRectangle"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/number_phone_text" />
+
+    <TextView
+        android:id="@+id/transport_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRectangle"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.383" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FreightLinker_App</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="choice">
+        <item>Водитель</item>
+        <item>Отправитель</item>
+    </string-array>
+    <string-array name="status">
+        <item>Занят</item>
+        <item>Ожидаю груз</item>
+        <item>Пустой</item>
+    </string-array>
+    <string-array name="transport_types">
+        <item>Фура</item>
+        <item>Автосцепка</item>
+        <item>Автоцистерна</item>
+        <item>Открытая платформа</item>
+    </string-array>
+</resources>
